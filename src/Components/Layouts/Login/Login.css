@@ -1,0 +1,43 @@
+/* Login.css */
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 92%;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    width: 92%;
+    padding: 10px;
+}
+
+.password-container input {
+    width: 92%;
+    padding: 10px;
+}
+
+.password-container {
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #003863;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
