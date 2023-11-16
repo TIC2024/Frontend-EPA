@@ -1,58 +1,155 @@
 /* ContractTable.css */
-
-.table {
+  
+ .table {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
-  }
-  
-  .table th {
+}
+
+.table th {
     background-color: #f2f2f2;
     padding: 8px;
     text-align: left;
     border: 1px solid #ddd;
-  }
-  
-  .table td {
+}
+
+.table td {
     padding: 8px;
     border: 1px solid #ddd;
-  }
-  
-  .table tr:hover {
+}
+
+.table tr:hover {
     background-color: #f5f5f5;
-  }
-  
-  /* Logo */
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
-  
-  .logo-container {
+}
+
+.logo-container {
     display: flex;
     align-items: center;
-  }
-  
-  .logo {
-    /* width: 100px;  */
-    height: 120px;
-  }
+}
 
-  
-  .new-contract-btn {
-    display: block;
-    padding: 10px 20px;
-    background-color: #003863;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 60%;
-  }
-  
-  .new-contract-btn:hover {
+.logo {
+    height: 120px;
+}
+
+.new-contract-btn {
+  display: block;
+  padding: 10px 20px;
+  background-color: #003863;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 42%;
+}
+
+.new-contract-btn:hover, .download-btn:hover {
     background-color: #0056b3;
-  }
-  
+}
+
+.download-btn img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.action-icon {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #ffc107; /* Color amarillo para la edición */
+}
+
+.delete-icon {
+  color: #dc3545; /* Color rojo para la eliminación */
+}
+
+
+/* Modales */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  z-index: 1000; 
+}
+
+.modal-content {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.modal-close-button {
+  margin-left: auto;
+  margin-top: -10px; 
+  margin-right: -10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 1.2rem; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.input-group {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+.input-group input, .input-group select {
+  width: 90%; 
+  padding: 10px;
+  margin-top: 5px; 
+  border-radius: 4px; 
+  border: 1px solid #ccc; 
+  margin: 0 auto;
+  display: block;
+}
+
+.modal-button-group {
+  display: flex;
+  justify-content: center; 
+}
+
+.modal-button {
+  background: #007bff; 
+  color: white; 
+  border: none;
+  padding: 10px 20px; 
+  margin-right: 10px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 0.8rem; 
+  flex-grow: 1; 
+  margin: 0 10px;
+}
+
+.modal-button.cancel {
+  background: #6c757d;
+}

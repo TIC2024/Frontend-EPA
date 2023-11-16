@@ -121,7 +121,7 @@ export const Registros = () => {
                     </label>
                     <label>Consecutivo: <input type="number" value={consecutivo} onChange={(e) => setConsecutivo(e.target.value)} /></label>
                     <h4>OBJETO CONTRATO</h4>
-                    <textarea className="text-area" value={objetoContrato} onChange={(e) => setObjetoContrato(e.target.value)}></textarea>
+                    <textarea placeholder="Objeto del contrato..." className="text-area" value={objetoContrato} onChange={(e) => setObjetoContrato(e.target.value)}></textarea>
                 </div>
                 {/* <div className="registro-right">
                 <label>Fecha Ingreso: <input type="date" value={fechaIngreso} onChange={(e) => setFechaIngreso(e.target.value)} /></label>
@@ -130,7 +130,7 @@ export const Registros = () => {
                 </div> */}
             </div>
             <h4>CONTRATISTA</h4>
-            <textarea value={novedades} onChange={(e) => setNovedades(e.target.value)}></textarea>
+            <textarea placeholder="Novedades del contrato, ejemplo documentos, contratista..." value={novedades} onChange={(e) => setNovedades(e.target.value)}></textarea>
             <div className="registro-buttons">
                 <button onClick={handleRegister}>REGISTRAR</button>
                 <button onClick={regresar}>REGRESAR</button>
